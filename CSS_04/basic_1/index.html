@@ -26,17 +26,17 @@
             display: none;
         }
 
-        p>a:hover {
-            font-weight: bold;
-        }
-
-        p>a:hover~span {
+        p>a:hover+span {
             display: inline;
         }
 
         div>a {
             background-repeat: no-repeat;
             background-position: right;
+        }
+        p>a:hover {
+            font-weight: bold;
+            font-style: italic;
         }
     </STYLE>
 </head>
