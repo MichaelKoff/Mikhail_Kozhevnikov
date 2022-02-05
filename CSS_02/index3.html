@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            width: 15em;
+            background-color: rgb(202, 202, 202);
+            float: left;
+        }
+        .article {
+            background-color: rgb(182, 182, 182);
+            margin-bottom: .2em;
+        }
+        .article > img
+        {
+            float: right;
+        }
+        body, h3, p
+            {
+                margin:0;
+                padding:0;
+            }
+        .footer {
+            background-color: rgb(182, 182, 182);
+            margin-bottom: .2em;
+            max-height:max-content;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h3>Блок навигации</h3>
+        <ul>
+            <li>Ширина 15em</li>
+            <li>Должен присутсвовать цвет фона</li>
+            <li>Располагается слева</li>
+            <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi libero perspiciatis possimus consequuntur nostrum dicta animi sint? Incidunt nobis debitis asperiores voluptatum natus, repudiandae aspernatur quibusdam, dicta corrupti, consectetur quos?</li>
+        </ul>
+    </div>
+    <div class="article">
+        <h3>Статья 1</h3>
+        <p>
+            Размер блока:<br>
+            Занимает всю доступную ширину<br>
+            Должен присутсвовать цвет фона<br>
+            Во всех "статьях" сделайте отступ снизу равным .2em, при помощи свойства magin-bottom<br>
+        </p>
+    </div>
+    <div class="article">
+        <h3>Статья 2</h3>
+        <p>
+            Размер блока:<br>
+            Занимает всю доступную ширину<br>
+            Должен присутсвовать цвет фона<br>
+            Во всех "статьях" сделайте отступ снизу равным .2em, при помощи свойства magin-bottom.
+            Картинка вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой картинки.<br>
+        </p>
+        <img src="email.png" alt="">
+        <div style="clear: both;"></div>
+    </div>
+    <div class="footer">
+        <p>Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внуть контентом.</p>
+    </div>
+</body>
+</html>
