@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python часть 1</title>
+    <meta http-equiv="expires" content="0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
+    <style>
+        pre {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: underline; color: rgb(0, 217, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x" style="margin-bottom: 20px;">
+            <h1>HOW-TO: Программа на Python, Часть 1</h1>
+        </div>
+        <div class="grid-x grid-padding-x">
+            <div class="medium-3 cell">
+            <ul>
+                <li>
+                        <a href="Python1.html">
+                            Программа на Python — часть 1
+                        </a>
+                </li>
+                <li>
+                        <a href="Python2.html">
+                            Программа на Python — часть 2
+                        </a>
+                </li>
+                <li>
+                        <a href="Python3.html">
+                            Программа на Python — часть 3
+                        </a>
+                </li>
+            </ul>
+            </div>
+            <div class="medium-9 cell">
+                <h2>HOW-TO: Программа на Python, Часть 1</h2>
+            </div>
+        </div>
+        <div class="grid-x grid-padding-x" style="margin-bottom: 20px;">
+            <div class="medium-3 cell">
+                <h2><a style="text-decoration: none;" name="Содержание">Содержание</a></h2>
+                <ul>
+                    <li><a href="#Наша первая программа">Наша первая программа</a></li>
+                    <li><a href="#Пример цикла For">Пример цикла For</a></li>
+                </ul>
+            </div>
+            <div class="medium-9 cell">
+        <pre>
+Из множества существующих языков программирования Python — один из самых лёгких
+в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
+Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
+обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
+оздание консольных приложений, а в следующей — программирование графических
+интерфейсов (<u>GUI</u>). Давайте создадим простую программу прямо сейчас.
+</pre>
+            </div>
+        </div>
+        <div class="grid-x grid-padding-x" style="margin-bottom: 20px;">
+            <div class="medium-3 cell">
+        <h2 style="color: rgb(0, 217, 255)"><a name="Наша первая программа"></a>Наша первая программа</h2>
+        <a href="#Содержание">К содержанию</a>
+            </div>
+            <div class="medium-9 cell">
+
+        <pre>
+Наберём код в текстовом редакторе (например, в <b>gedit</b>). Потом мы разберёмся, что делает
+каждая строка и пойдём дальше.
+
+Введите эти 4 строки:
+
+<code>
+#!/usr/bin/env python
+print 'Hello. I am a python program.'
+name = raw_input("What is your name?")
+print "Hello there, " + name + "!"
+</code>
+Это всё. Сохраните файл как <b>hello.py</b> в любом месте. Я предлагаю сохранить его в папке
+<b>python_examples</b> в домашнем каталоге. Этот пример показывает, как просто написать
+программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для
+этого введите в терминале
+
+<code><u><b><i>chmod +x hello.py</i></b></u></code><br> 
+<pre>
+В папке, в который вы сохранили программу. Теперь запустите её.
+</pre>
+<code>greg@earth:~/python_examples$ ./hello.py
+Hello. I am a python program.
+What is your name? Ferd Burphel
+Hello there, Ferd Burphel!
+greg@earth:~/python_examples$
+</code>    
+Вот и всё.
+</pre>
+            </div>
+        </div>
+        <div class="grid-x grid-padding-x">
+            <div class="medium-3 cell">
+        <h2 style="color: rgb(0, 217, 255); font-weight: bold;"><a name="Пример цикла For"></a>Пример цикла For</h2>
+        <a href="#Содержание">К содержанию</a>
+            </div>
+            <div class="medium-9 cell">
+        <pre>
+Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
+редактор и наберите следующую программу:
+
+<code>#!/usr/bin/env python
+for cntr in range(0,10):
+    print cntr
+</code>   
+<i>Не забудьте поставить символ табуляции перед строкой «print cntr».</i> Это важно. В
+Python для указания на блоки кода используются не круглые «<b>(</b>» и фигурные «<b>{</b>» скобки
+как в других языках программирования, а отступы.
+        </pre>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
